@@ -1,0 +1,218 @@
+[
+  {
+    "id": "starry-night",
+    "title": {"en": "The Starry Night", "hi": "तारों भरी रात", "mr": "ताऱ्यांनी भरलेली रात्र"},
+    "artist": "Vincent van Gogh",
+    "year": "1889",
+    "period": {"en": "Post-Impressionism", "hi": "उत्तर-प्रभाववाद", "mr": "उत्तर-प्रभाववाद"},
+    "medium": {"en": "Oil on canvas", "hi": "कैनवास पर तेल रंग", "mr": "कॅनव्हासवर तेलरंग"},
+    "place": {"en": "Saint-Rémy-de-Provence, France", "hi": "साँ-रेमी-दे-प्रोव्हांस, फ्रान्स", "mr": "साँ-रेमी-दे-प्रोव्हांस, फ्रान्स"},
+    "image": "/img/starry-night.svg",
+    "alt": "Original illustrative cover inspired by a swirling, star-filled night sky; not a reproduction of the painting.",
+    "story": {
+      "en": "Painted in 1889 while Van Gogh was staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy, this night scene transforms a view of the world into restless movement. The village and the dramatic sky are not simply a literal snapshot: the painting combines observation with imagination. Thick, directional brushstrokes make the sky feel almost alive.",
+      "hi": "विन्सेंट वैन गॉग ने 1889 में सेंट-रेमी के सेंट-पॉल-दे-मौसोल आश्रम में रहते हुए यह चित्र बनाया। इसमें रात का दृश्य घूमती हुई ऊर्जा से भरा लगता है। गाँव और नाटकीय आकाश केवल वास्तविक दृश्य की नकल नहीं हैं; चित्र में अवलोकन और कल्पना दोनों शामिल हैं। मोटे, दिशात्मक ब्रश-स्ट्रोक आकाश को जीवंत बनाते हैं।",
+      "mr": "व्हिन्सेंट व्हॅन गॉग यांनी 1889 मध्ये सेंट-रेमी येथील सेंट-पॉल-दे-मौसोल आश्रमात असताना हे चित्र रंगवले. रात्रीचे दृश्य सतत फिरणाऱ्या हालचालींनी भरलेले वाटते. गाव आणि नाट्यमय आकाश हे केवळ वास्तवाचे हुबेहूब चित्रण नाही; यात निरीक्षण आणि कल्पना दोन्ही आहेत. जाड, दिशादर्शक ब्रश-स्ट्रोक आकाशाला जिवंतपणा देतात."
+    },
+    "speaks": {
+      "en": "I am a night made of movement. Look beyond the bright stars: the sky keeps turning, while the village rests below. I am Van Gogh's vision, shaped by memory, observation, and feeling.",
+      "hi": "मैं गति से बनी एक रात हूँ। चमकते तारों से आगे देखिए—आकाश घूमता रहता है, जबकि नीचे गाँव शांत है। मैं वैन गॉग की दृष्टि हूँ, जिसमें स्मृति, अवलोकन और भावना मिलते हैं।",
+      "mr": "मी हालचालींनी भरलेली रात्र आहे. तेजस्वी ताऱ्यांपलीकडे पाहा—आकाश फिरत राहते, तर खाली गाव शांत आहे. मी व्हॅन गॉगची दृष्टी आहे; यात स्मृती, निरीक्षण आणि भावना एकत्र येतात."
+    },
+    "hiddenDetails": [
+      {"id":"cypress","label":{"en":"The dark cypress","hi":"गहरा सरू वृक्ष","mr":"गडद सायप्रस वृक्ष"},"position":{"x":24,"y":67},"text":{"en":"The tall, flame-like cypress creates a visual bridge between the earth and sky. Its shape also adds a note of mystery to the landscape.","hi":"लौ जैसा ऊँचा सरू वृक्ष धरती और आकाश के बीच दृश्य सेतु बनाता है। इसका आकार दृश्य में रहस्य भी जोड़ता है।","mr":"ज्वालेसारखा उंच सायप्रस वृक्ष जमीन आणि आकाश यांना दृश्यरित्या जोडतो. त्याचा आकार दृश्यात गूढता आणतो."}},
+      {"id":"stars","label":{"en":"Rings of light","hi":"प्रकाश के घेरे","mr":"प्रकाशाची वलये"},"position":{"x":66,"y":22},"text":{"en":"The halos around the stars are built from energetic brushwork. Rather than smooth realism, the paint makes light feel active.","hi":"तारों के चारों ओर बने प्रकाश-वृत्त ऊर्जावान ब्रश-स्ट्रोक से बनाए गए हैं। चिकने यथार्थ के बजाय रंग प्रकाश को गतिशील बनाते हैं।","mr":"ताऱ्यांभोवतीची प्रकाशवलये ऊर्जावान ब्रश-स्ट्रोकमधून तयार झाली आहेत. गुळगुळीत वास्तववादाऐवजी रंग प्रकाशाला हालचाल देतात."}},
+      {"id":"village","label":{"en":"The quiet village","hi":"शांत गाँव","mr":"शांत गाव"},"position":{"x":54,"y":78},"text":{"en":"The village is comparatively still. Its calm shapes contrast with the restless sky above it.","hi":"गाँव अपेक्षाकृत शांत है। उसकी स्थिर आकृतियाँ ऊपर के बेचैन आकाश से विपरीत हैं।","mr":"गाव तुलनेने शांत आहे. त्याच्या स्थिर आकृत्या वरच्या अस्वस्थ आकाशाशी विरोधाभास निर्माण करतात."}}
+    ],
+    "timeline": [
+      {"year":"1889","event":{"en":"Van Gogh paints The Starry Night in Saint-Rémy.","hi":"वैन गॉग सेंट-रेमी में यह चित्र बनाते हैं।","mr":"व्हॅन गॉग सेंट-रेमी येथे हे चित्र रंगवतात."},"world":{"en":"The Eiffel Tower opens in Paris.","hi":"पेरिस में एफिल टॉवर खुलता है।","mr":"पॅरिसमध्ये आयफेल टॉवर खुले होते."}},
+      {"year":"1900s","event":{"en":"The painting enters public view and becomes widely discussed.","hi":"चित्र सार्वजनिक रूप से प्रदर्शित होने लगता है और चर्चित होता है।","mr":"चित्र सार्वजनिक प्रदर्शनात येते आणि चर्चेत येते."},"world":{"en":"Modern art movements rethink how colour and emotion can work together.","hi":"आधुनिक कला रंग और भावना के संबंध को नए ढंग से देखती है।","mr":"आधुनिक कला रंग आणि भावना यांचा संबंध नव्याने तपासते."}}
+    ],
+    "qa": [
+      {"q":"Why is the sky so blue?","a":{"en":"Blue dominates the scene and is set against warm yellow stars. The contrast makes the night feel luminous rather than flat. Any deeper emotional reading is an interpretation, not a single proven meaning.","hi":"नीला रंग दृश्य पर छाया है और गर्म पीले तारों के सामने रखा गया है। यह विरोध रात को चमकदार बनाता है। इसके भावनात्मक अर्थ की कोई एक सिद्ध व्याख्या नहीं है।","mr":"निळा रंग दृश्यावर प्रभावी आहे आणि उबदार पिवळ्या ताऱ्यांच्या विरोधात दिसतो. या विरोधामुळे रात्र उजळ वाटते. त्याचा भावनिक अर्थ एकच निश्चित असा नाही."}},
+      {"q":"Where was it painted?","a":{"en":"Van Gogh painted it in 1889 while staying at the Saint-Paul-de-Mausole asylum in Saint-Rémy, southern France.","hi":"वैन गॉग ने इसे 1889 में दक्षिणी फ्रांस के सेंट-रेमी स्थित सेंट-पॉल-दे-मौसोल आश्रम में रहते हुए बनाया।","mr":"व्हॅन गॉग यांनी 1889 मध्ये दक्षिण फ्रान्समधील सेंट-रेमी येथील सेंट-पॉल-दे-मौसोल आश्रमात असताना हे चित्र रंगवले."}},
+      {"q":"What is the cypress tree?","a":{"en":"The tall dark tree is a cypress. It anchors the foreground and visually links the land to the sky.","hi":"लंबा गहरा वृक्ष सरू है। यह अग्रभाग को स्थिर करता है और भूमि को आकाश से जोड़ता है।","mr":"उंच गडद वृक्ष सायप्रस आहे. तो पुढील भागाला आधार देतो आणि जमीन व आकाश यांना दृश्यरित्या जोडतो."}}
+    ],
+    "source": "https://www.moma.org/collection/works/79802"
+  },
+  {
+    "id": "mona-lisa",
+    "title": {"en": "Mona Lisa", "hi": "मोना लिसा", "mr": "मोना लिसा"},
+    "artist": "Leonardo da Vinci",
+    "year": "c. 1503–1519",
+    "period": {"en": "High Renaissance", "hi": "उच्च पुनर्जागरण", "mr": "उच्च पुनर्जागरण"},
+    "medium": {"en": "Oil on poplar panel", "hi": "पॉपलर लकड़ी पर तेल रंग", "mr": "पॉपलर लाकडी फळीवर तेलरंग"},
+    "place": {"en": "Florence, Italy (associated with its creation)", "hi": "फ्लोरेंस, इटली (निर्माण से जुड़ा स्थान)", "mr": "फ्लॉरेन्स, इटली (निर्मितीशी संबंधित ठिकाण)"},
+    "image": "/img/mona-lisa.svg",
+    "alt": "Original illustrative cover inspired by a Renaissance portrait composition; not a reproduction of the painting.",
+    "story": {
+      "en": "The portrait is traditionally identified as Lisa Gherardini, the wife of Florentine merchant Francesco del Giocondo. Leonardo's soft transitions of light and shade, often called sfumato, make facial features feel subtly blended rather than sharply outlined. The sitter's identity and the famous expression have inspired centuries of discussion.",
+      "hi": "इस चित्र को परंपरागत रूप से फ्लोरेंस के व्यापारी फ्रांसेस्को डेल जिओकोंडो की पत्नी लीसा घेरार्दिनी का चित्र माना जाता है। लियोनार्डो ने प्रकाश और छाया के मुलायम बदलावों का उपयोग किया, जिसे स्फ़ूमातो कहा जाता है। इससे चेहरे की रेखाएँ तेज़ होने के बजाय धीरे-धीरे घुलती हुई लगती हैं।",
+      "mr": "या चित्रातील स्त्रीची ओळख परंपरेने फ्लॉरेन्समधील व्यापारी फ्रान्चेस्को डेल जिओकोंदो यांची पत्नी लिसा घेरार्दिनी अशी मानली जाते. लिओनार्डो यांनी प्रकाश आणि सावलीतील मऊ बदल वापरले; या तंत्राला स्फुमातो म्हणतात. त्यामुळे चेहऱ्याच्या रेषा कठोर न वाटता हळूहळू मिसळलेल्या दिसतात."
+    },
+    "speaks": {
+      "en": "You may think you know me from my smile, but a portrait is never just a face. Look at the soft edges, the distant landscape, and the way light fades into shadow. What you notice depends on where you look.",
+      "hi": "आपको लगता होगा कि आप मेरी मुस्कान से मुझे जानते हैं, लेकिन चित्र केवल एक चेहरा नहीं होता। मुलायम किनारों, दूर के परिदृश्य और प्रकाश के छाया में घुलने को देखिए। आप क्या देखते हैं, यह आपकी दृष्टि पर निर्भर करता है।",
+      "mr": "माझ्या हास्यामुळे तुम्ही मला ओळखता असे वाटेल; पण चित्र म्हणजे केवळ चेहरा नसतो. मऊ कडा, दूरचा निसर्ग आणि प्रकाश सावलीत कसा मिसळतो ते पाहा. तुम्हाला काय दिसते हे तुम्ही कुठे पाहता यावर अवलंबून असते."
+    },
+    "hiddenDetails": [
+      {"id":"smile","label":{"en":"The half-smile","hi":"हल्की मुस्कान","mr":"अर्धे हास्य"},"position":{"x":54,"y":43},"text":{"en":"Leonardo softened the transitions around the mouth. The expression can seem to change as attention shifts between the mouth and the eyes.","hi":"लियोनार्डो ने मुँह के आसपास के बदलावों को मुलायम रखा। ध्यान मुँह और आँखों के बीच बदलने पर भाव अलग लग सकता है।","mr":"लिओनार्डो यांनी तोंडाभोवतीचे बदल मऊ ठेवले. लक्ष तोंडावरून डोळ्यांकडे वळल्यावर भाव बदलल्यासारखा वाटू शकतो."}},
+      {"id":"hands","label":{"en":"Resting hands","hi":"आराम से रखे हाथ","mr":"विश्रांतीतील हात"},"position":{"x":55,"y":73},"text":{"en":"The carefully arranged hands create a calm, balanced base for the portrait. Their placement also makes the sitter feel composed.","hi":"ध्यान से रखे हाथ चित्र को शांत और संतुलित आधार देते हैं। उनकी स्थिति बैठी हुई आकृति को संयत दिखाती है।","mr":"काळजीपूर्वक ठेवलेले हात चित्राला शांत आणि संतुलित आधार देतात. त्यांच्या ठेवणीमुळे व्यक्तिमत्त्व संयत वाटते."}},
+      {"id":"landscape","label":{"en":"The distant landscape","hi":"दूर का परिदृश्य","mr":"दूरचा निसर्ग"},"position":{"x":77,"y":28},"text":{"en":"The dreamlike landscape sits far behind the sitter. Leonardo uses atmospheric perspective so distant forms appear softer and less distinct.","hi":"स्वप्न जैसा परिदृश्य पीछे दूर दिखाई देता है। लियोनार्डो वायुमंडलीय परिप्रेक्ष्य से दूर की आकृतियों को हल्का और कम स्पष्ट बनाते हैं।","mr":"स्वप्नवत निसर्ग मागे दूर दिसतो. लिओनार्डो वातावरणीय परिप्रेक्ष्य वापरून दूरच्या आकारांना मऊ आणि कमी स्पष्ट करतात."}}
+    ],
+    "timeline": [
+      {"year":"c. 1503","event":{"en":"Leonardo begins or develops the portrait in Florence.","hi":"लियोनार्डो फ्लोरेंस में चित्र पर काम शुरू या आगे बढ़ाते हैं।","mr":"लिओनार्डो फ्लॉरेन्स येथे चित्रावर काम सुरू करतात किंवा पुढे नेतात."},"world":{"en":"The Italian Renaissance is flourishing in art, science, and engineering.","hi":"इटली में कला, विज्ञान और अभियांत्रिकी का पुनर्जागरण फल-फूल रहा है।","mr":"इटलीमध्ये कला, विज्ञान आणि अभियांत्रिकीतील पुनर्जागरण बहरत आहे."}},
+      {"year":"1519","event":{"en":"Leonardo dies; the painting remains associated with his body of work.","hi":"लियोनार्डो का निधन होता है; चित्र उनके कार्य से जुड़ा रहता है।","mr":"लिओनार्डो यांचे निधन होते; हे चित्र त्यांच्या कलाकृतींशी जोडलेले राहते."},"world":{"en":"Leonardo's notebooks reflect a wide-ranging curiosity about nature and machines.","hi":"लियोनार्डो की नोटबुक प्रकृति और मशीनों के प्रति व्यापक जिज्ञासा दिखाती हैं।","mr":"लिओनार्डो यांच्या वहीत निसर्ग आणि यंत्रांविषयीची व्यापक जिज्ञासा दिसते."}}
+    ],
+    "qa": [
+      {"q":"Who is the woman?","a":{"en":"The traditional identification is Lisa Gherardini, wife of Florentine merchant Francesco del Giocondo. The exact circumstances and details of the commission are still discussed by scholars.","hi":"परंपरागत पहचान लीसा घेरार्दिनी की है, जो फ्लोरेंस के व्यापारी फ्रांसेस्को डेल जिओकोंडो की पत्नी थीं। कमीशन के सटीक विवरणों पर विद्वानों में चर्चा जारी है।","mr":"परंपरेनुसार ही स्त्री फ्लॉरेन्समधील व्यापारी फ्रान्चेस्को डेल जिओकोंदो यांच्या पत्नी लिसा घेरार्दिनी आहे. चित्राच्या कामाची नेमकी पार्श्वभूमी अजूनही अभ्यासली जाते."}},
+      {"q":"Why does the smile look different?","a":{"en":"The subtle shading around the mouth and eyes can change how the expression is perceived. This is an interpretation of the painting's visual technique, not a hidden mechanical trick.","hi":"मुँह और आँखों के आसपास की सूक्ष्म छाया से भाव अलग महसूस हो सकता है। यह चित्र की दृश्य तकनीक की व्याख्या है, कोई छिपी यांत्रिक चाल नहीं।","mr":"तोंड आणि डोळ्यांभोवतीच्या सूक्ष्म छटांमुळे भाव वेगळा जाणवू शकतो. ही चित्राच्या दृश्य तंत्राची व्याख्या आहे; कोणतीही गुप्त यांत्रिक युक्ती नाही."}},
+      {"q":"What is sfumato?","a":{"en":"Sfumato is a painting technique using delicate, gradual transitions between tones and colours, avoiding hard outlines. It helps create a soft, smoky appearance.","hi":"स्फ़ूमातो एक ऐसी चित्रकला तकनीक है जिसमें रंगों और टोन के बीच धीरे-धीरे बदलाव होते हैं और कठोर रेखाएँ कम होती हैं। इससे धुँधला, मुलायम प्रभाव बनता है।","mr":"स्फुमातो हे चित्रकलेतील तंत्र आहे. यात रंग आणि छटांमधील बदल हळूहळू होतात व कठोर बाह्यरेषा टाळल्या जातात. त्यामुळे धूसर, मऊ परिणाम मिळतो."}}
+    ],
+    "source": "https://collections.louvre.fr/en/ark:/53355/cl010062370"
+  },
+  {
+    "id": "great-wave",
+    "title": {"en": "The Great Wave off Kanagawa", "hi": "कानागावा के पास महान लहर", "mr": "कानागावाजवळील महान लाट"},
+    "artist": "Katsushika Hokusai",
+    "year": "c. 1831",
+    "period": {"en": "Edo period / Ukiyo-e", "hi": "एदो काल / उकियो-ए", "mr": "एदो काळ / उकियो-ए"},
+    "medium": {"en": "Colour woodblock print", "hi": "रंगीन वुडब्लॉक प्रिंट", "mr": "रंगीत वुडब्लॉक प्रिंट"},
+    "place": {"en": "Japan", "hi": "जापान", "mr": "जपान"},
+    "image": "/img/great-wave.svg",
+    "alt": "Original illustrative cover inspired by a dramatic wave and distant mountain; not a reproduction of Hokusai's print.",
+    "story": {
+      "en": "This print is the best-known image in Hokusai's series Thirty-six Views of Mount Fuji. A huge curling wave dwarfs the boats, while Mount Fuji appears small in the distance. The strong outlines and carefully layered blues are characteristic of ukiyo-e woodblock printing. The scene balances danger, rhythm, and a distant point of stillness.",
+      "hi": "यह प्रिंट होकुसाई की श्रृंखला ‘माउंट फ़ूजी के छत्तीस दृश्य’ की सबसे प्रसिद्ध छवि है। विशाल घूमती लहर नावों को छोटा कर देती है, जबकि दूर माउंट फ़ूजी दिखाई देता है। स्पष्ट रेखाएँ और नीले रंग की परतें उकियो-ए वुडब्लॉक प्रिंट की विशेषताएँ हैं।",
+      "mr": "ही छपाई होकुसाई यांच्या ‘माउंट फुजीची छत्तीस दृश्ये’ या मालिकेतील सर्वात प्रसिद्ध प्रतिमा आहे. प्रचंड वळणारी लाट होड्यांना लहान भासवते, तर दूर माउंट फुजी दिसतो. ठळक रेषा आणि निळ्या रंगांचे थर ही उकियो-ए वुडब्लॉक छपाईची वैशिष्ट्ये आहेत."
+    },
+    "speaks": {
+      "en": "I rise, curl, and freeze for a single moment. The boats move through my force, and Mount Fuji waits beyond me. Look closely: power and balance share the same frame.",
+      "hi": "मैं उठती हूँ, मुड़ती हूँ और एक क्षण के लिए ठहर जाती हूँ। नावें मेरी शक्ति के बीच से गुजरती हैं और माउंट फ़ूजी दूर प्रतीक्षा करता है। ध्यान से देखिए—शक्ति और संतुलन एक ही चित्र में हैं।",
+      "mr": "मी उसळते, वळते आणि एका क्षणासाठी स्थिर झाल्यासारखी दिसते. होड्या माझ्या शक्तीतून मार्ग काढतात आणि माउंट फुजी दूर उभा आहे. नीट पाहा—शक्ती आणि संतुलन एकाच चौकटीत आहेत."
+    },
+    "hiddenDetails": [
+      {"id":"claw","label":{"en":"The wave's claw","hi":"लहर का पंजा","mr":"लाटेचे पंजासारखे टोक"},"position":{"x":45,"y":34},"text":{"en":"The wave's white crest breaks into pointed forms that resemble fingers. This turns water into something almost creature-like.","hi":"लहर की सफ़ेद चोटी नुकीली आकृतियों में टूटती है, जो उँगलियों जैसी लगती हैं। पानी लगभग जीव जैसा दिखाई देता है।","mr":"लाटेचा पांढरा माथा बोटांसारख्या टोकदार आकारांत विभागतो. त्यामुळे पाणी एखाद्या सजीव प्राण्यासारखे वाटते."}},
+      {"id":"fuji","label":{"en":"Mount Fuji","hi":"माउंट फ़ूजी","mr":"माउंट फुजी"},"position":{"x":79,"y":69},"text":{"en":"The mountain is small in scale but central to the series. Its calm, stable shape contrasts with the wave's movement.","hi":"श्रृंखला में पर्वत आकार में छोटा है, लेकिन केंद्रीय विषय है। उसका स्थिर आकार लहर की गति के विपरीत है।","mr":"मालिकेत पर्वत आकाराने लहान असला तरी महत्त्वाचा आहे. त्याचा स्थिर आकार लाटेच्या हालचालींशी विरोधाभास निर्माण करतो."}},
+      {"id":"boats","label":{"en":"The boats","hi":"नावें","mr":"होड्या"},"position":{"x":55,"y":60},"text":{"en":"The long boats and their tiny passengers make the wave feel enormous. The diagonal arrangement increases the sense of movement.","hi":"लंबी नावें और उनके छोटे यात्री लहर को विशाल बनाते हैं। तिरछी रचना गति का एहसास बढ़ाती है।","mr":"लांब होड्या आणि त्यांतील लहान प्रवासी लाट अधिक प्रचंड भासवतात. तिरपी रचना हालचालीची जाणीव वाढवते."}}
+    ],
+    "timeline": [
+      {"year":"c. 1831","event":{"en":"Hokusai's print circulates as part of a series devoted to Mount Fuji.","hi":"होकुसाई का प्रिंट माउंट फ़ूजी को समर्पित श्रृंखला का हिस्सा बनता है।","mr":"होकुसाई यांची छपाई माउंट फुजीवरील मालिकेचा भाग म्हणून प्रसारित होते."},"world":{"en":"Japan's Edo-period urban culture supports a thriving print market.","hi":"जापान की एदो-कालीन शहरी संस्कृति में प्रिंट बाज़ार फलता-फूलता है।","mr":"जपानमधील एदो काळातील शहरी संस्कृतीमुळे छपाईची बाजारपेठ वाढते."}},
+      {"year":"1850s onward","event":{"en":"Japanese prints become increasingly visible to European artists and collectors.","hi":"जापानी प्रिंट यूरोपीय कलाकारों और संग्रहकर्ताओं तक अधिक पहुँचते हैं।","mr":"जपानी छपाई युरोपीय कलाकार आणि संग्राहकांमध्ये अधिक परिचित होते."},"world":{"en":"Cross-cultural exchanges influence modern art and design.","hi":"अंतर-सांस्कृतिक आदान-प्रदान आधुनिक कला और डिज़ाइन को प्रभावित करता है।","mr":"संस्कृतींमधील देवाणघेवाण आधुनिक कला आणि रचनेवर प्रभाव टाकते."}}
+    ],
+    "qa": [
+      {"q":"What is Mount Fuji?","a":{"en":"Mount Fuji is the volcanic mountain shown near the horizon. It is the subject of Hokusai's larger series Thirty-six Views of Mount Fuji.","hi":"माउंट फ़ूजी क्षितिज के पास दिखाया गया ज्वालामुखी पर्वत है। यह होकुसाई की ‘माउंट फ़ूजी के छत्तीस दृश्य’ श्रृंखला का विषय है।","mr":"क्षितिजाजवळ दिसणारा माउंट फुजी हा ज्वालामुखी पर्वत आहे. तो होकुसाई यांच्या ‘माउंट फुजीची छत्तीस दृश्ये’ या मालिकेचा विषय आहे."}},
+      {"q":"How was it made?","a":{"en":"It is a colour woodblock print. Artists and craftspeople carved separate blocks for colours, then printed them in layers on paper.","hi":"यह रंगीन वुडब्लॉक प्रिंट है। अलग-अलग रंगों के लिए लकड़ी के ब्लॉक तराशे गए और फिर कागज़ पर परतों में छापे गए।","mr":"ही रंगीत वुडब्लॉक छपाई आहे. वेगवेगळ्या रंगांसाठी स्वतंत्र लाकडी ठोकळे कोरले जात आणि मग कागदावर थरांमध्ये छपाई केली जात असे."}},
+      {"q":"Why is the wave so big?","a":{"en":"Its scale is a compositional choice: the wave dominates the foreground while Mount Fuji is reduced in the distance. This heightens drama and contrast.","hi":"यह आकार रचना का निर्णय है: लहर अग्रभाग में छाई है और माउंट फ़ूजी दूर छोटा दिखता है। इससे नाटकीयता और विरोध बढ़ता है।","mr":"हा आकार रचनेचा भाग आहे: पुढील भागात लाट प्रभावी आहे, तर माउंट फुजी दूर लहान दिसतो. त्यामुळे नाट्यमयता आणि विरोध वाढतो."}}
+    ],
+    "source": "https://www.metmuseum.org/art/collection/search/45434"
+  },
+  {
+    "id": "pearl-earring",
+    "title": {"en": "Girl with a Pearl Earring", "hi": "मोती की बाली वाली लड़की", "mr": "मोत्याचे कर्णभूषण घातलेली मुलगी"},
+    "artist": "Johannes Vermeer",
+    "year": "c. 1665",
+    "period": {"en": "Dutch Golden Age", "hi": "डच स्वर्ण युग", "mr": "डच सुवर्णकाळ"},
+    "medium": {"en": "Oil on canvas", "hi": "कैनवास पर तेल रंग", "mr": "कॅनव्हासवर तेलरंग"},
+    "place": {"en": "Dutch Republic", "hi": "डच गणराज्य", "mr": "डच प्रजासत्ताक"},
+    "image": "/img/pearl-earring.svg",
+    "alt": "Original illustrative cover inspired by a softly lit portrait and pearl; not a reproduction of Vermeer's painting.",
+    "story": {
+      "en": "Often called the 'Mona Lisa of the North', Vermeer's painting is usually described as a tronie: a character study rather than a formal portrait of a known sitter. A dark background makes the face, blue-and-gold head wrap, and small pearl stand forward. The subject seems to have turned at a moment's notice, giving the image its intimate immediacy.",
+      "hi": "वर्मीर के चित्र को अक्सर ‘उत्तर की मोना लिसा’ कहा जाता है। इसे सामान्यतः ट्रोनी माना जाता है—किसी पहचाने गए व्यक्ति का औपचारिक चित्र नहीं, बल्कि एक चरित्र-अध्ययन। गहरे पृष्ठभूमि के सामने चेहरा, नीला-सुनहरा सिर का कपड़ा और छोटा मोती उभरते हैं।",
+      "mr": "व्हर्मिअर यांच्या चित्राला अनेकदा ‘उत्तर युरोपची मोना लिसा’ म्हटले जाते. हे चित्र सामान्यतः ट्रोनी मानले जाते—एखाद्या ओळखलेल्या व्यक्तीचे औपचारिक चित्र नव्हे, तर व्यक्तिमत्त्वाचा अभ्यास. गडद पार्श्वभूमीवर चेहरा, निळे-सोनेरी डोक्यावरील वस्त्र आणि छोटा मोती उठून दिसतात."
+    },
+    "speaks": {
+      "en": "I have turned toward you, but I have not explained myself. The light catches a pearl, a lip, and one eye; the rest dissolves into shadow. Perhaps the question is not who I am, but why this moment feels so present.",
+      "hi": "मैं आपकी ओर मुड़ी हूँ, पर मैंने अपना परिचय नहीं दिया। रोशनी मोती, होंठ और एक आँख पर पड़ती है; बाकी सब छाया में घुल जाता है। शायद प्रश्न यह नहीं कि मैं कौन हूँ, बल्कि यह कि यह क्षण इतना जीवंत क्यों लगता है।",
+      "mr": "मी तुमच्याकडे वळले आहे, पण स्वतःची ओळख सांगितलेली नाही. प्रकाश मोती, ओठ आणि एका डोळ्यावर पडतो; बाकी सर्व सावलीत विरघळते. कदाचित प्रश्न मी कोण आहे हा नसून हा क्षण इतका जिवंत का वाटतो हा आहे."
+    },
+    "hiddenDetails": [
+      {"id":"pearl","label":{"en":"The pearl","hi":"मोती","mr":"मोती"},"position":{"x":65,"y":63},"text":{"en":"The earring is built from a small bright highlight and soft reflected light. Its simplicity makes it catch the eye against the dark clothing.","hi":"बाली को एक छोटे चमकीले बिंदु और मुलायम परावर्तित रोशनी से दिखाया गया है। गहरे कपड़ों के सामने इसकी सादगी ध्यान खींचती है।","mr":"कर्णभूषण लहान तेजस्वी ठिपका आणि मऊ परावर्तित प्रकाशातून दाखवले आहे. गडद वस्त्रांच्या पार्श्वभूमीवर त्याची साधेपणा लक्ष वेधतो."}},
+      {"id":"turban","label":{"en":"Blue and gold fabric","hi":"नीला और सुनहरा कपड़ा","mr":"निळे-सोनेरी वस्त्र"},"position":{"x":42,"y":22},"text":{"en":"The head wrap creates a strong diagonal and adds colour to an otherwise restrained palette. The fabric is part of the image's visual drama.","hi":"सिर का कपड़ा एक मजबूत तिरछी रेखा बनाता है और सीमित रंगों में रंग जोड़ता है। कपड़ा चित्र के दृश्य नाट्य का हिस्सा है।","mr":"डोक्यावरील वस्त्र ठळक तिरपी रेषा तयार करते आणि मर्यादित रंगसंगतीत रंग आणते. हे वस्त्र चित्राच्या दृश्य नाट्याचा भाग आहे."}},
+      {"id":"light","label":{"en":"A glance over the shoulder","hi":"कंधे के ऊपर से नज़र","mr":"खांद्यावरून वळलेली नजर"},"position":{"x":54,"y":39},"text":{"en":"The turned head and direct gaze create the feeling that the viewer has interrupted a fleeting moment.","hi":"मुड़ा हुआ सिर और सीधी नज़र ऐसा महसूस कराते हैं जैसे दर्शक ने क्षणभर के दृश्य में प्रवेश किया हो।","mr":"वळलेले डोके आणि थेट नजर यामुळे पाहणाऱ्याने क्षणिक प्रसंगात प्रवेश केला आहे असे वाटते."}}
+    ],
+    "timeline": [
+      {"year":"c. 1665","event":{"en":"Vermeer creates a study of a young figure with a striking head wrap.","hi":"वर्मीर सिर पर आकर्षक कपड़ा पहने युवा आकृति का अध्ययन बनाते हैं।","mr":"व्हर्मिअर डोक्यावर वैशिष्ट्यपूर्ण वस्त्र असलेल्या तरुण व्यक्तीचा अभ्यास रंगवतात."},"world":{"en":"Dutch cities are centres of trade, science, and painting.","hi":"डच शहर व्यापार, विज्ञान और चित्रकला के केंद्र हैं।","mr":"डच शहरे व्यापार, विज्ञान आणि चित्रकलेची केंद्रे आहेत."}},
+      {"year":"1881","event":{"en":"The painting is sold at auction in The Hague and later becomes widely admired.","hi":"चित्र द हेग में नीलामी में बिकता है और बाद में व्यापक रूप से सराहा जाता है।","mr":"चित्र द हेग येथे लिलावात विकले जाते आणि नंतर मोठ्या प्रमाणावर प्रशंसित होते."},"world":{"en":"European museums and collectors are building public art collections.","hi":"यूरोपीय संग्रहालय और संग्राहक सार्वजनिक कला-संग्रह बना रहे हैं।","mr":"युरोपीय संग्रहालये आणि संग्राहक सार्वजनिक कला-संग्रह तयार करत आहेत."}}
+    ],
+    "qa": [
+      {"q":"Who is the girl?","a":{"en":"We do not know the sitter's identity. The work is usually described as a tronie, a study of a character or type rather than a documented portrait.","hi":"बैठी हुई लड़की की पहचान ज्ञात नहीं है। इसे आम तौर पर ट्रोनी कहा जाता है—दस्तावेज़ित चित्र के बजाय किसी चरित्र या प्रकार का अध्ययन।","mr":"चित्रातील मुलीची ओळख निश्चितपणे माहीत नाही. हे सामान्यतः ट्रोनी मानले जाते—नोंद असलेल्या व्यक्तिचित्राऐवजी एखाद्या प्रकाराचा किंवा व्यक्तिमत्त्वाचा अभ्यास."}},
+      {"q":"Is the earring a real pearl?","a":{"en":"The painting depicts a pearl-like earring, but its material and exact object are not certain. The bright highlight and reflected light do much of the visual work.","hi":"चित्र में मोती जैसी बाली दिखाई गई है, लेकिन वस्तु का वास्तविक पदार्थ और पहचान निश्चित नहीं है। चमकीला बिंदु और परावर्तित रोशनी दृश्य प्रभाव बनाते हैं।","mr":"चित्रात मोत्यासारखे कर्णभूषण दिसते; मात्र त्याचा खरा पदार्थ आणि नेमकी वस्तू निश्चित नाही. तेजस्वी ठिपका आणि परावर्तित प्रकाश दृश्य परिणाम तयार करतात."}},
+      {"q":"What is a tronie?","a":{"en":"A tronie is a character study, often showing an expressive face, costume, or unusual pose. It is not necessarily intended to identify a specific real person.","hi":"ट्रोनी एक चरित्र-अध्ययन है, जिसमें भावपूर्ण चेहरा, पोशाक या असामान्य मुद्रा हो सकती है। इसका उद्देश्य किसी वास्तविक व्यक्ति की पहचान बताना आवश्यक नहीं है।","mr":"ट्रोनी म्हणजे व्यक्तिमत्त्वाचा अभ्यास. यात भावपूर्ण चेहरा, पोशाख किंवा वेगळी मुद्रा दाखवली जाऊ शकते. विशिष्ट वास्तविक व्यक्तीची ओळख दाखवणे आवश्यक नसते."}}
+    ],
+    "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring/"
+  },
+  {
+    "id": "persistence-memory",
+    "title": {"en": "The Persistence of Memory", "hi": "स्मृति का स्थायित्व", "mr": "स्मृतीचे स्थैर्य"},
+    "artist": "Salvador Dalí",
+    "year": "1931",
+    "period": {"en": "Surrealism", "hi": "अतियथार्थवाद", "mr": "अतिवास्तववाद"},
+    "medium": {"en": "Oil on canvas", "hi": "कैनवास पर तेल रंग", "mr": "कॅनव्हासवर तेलरंग"},
+    "place": {"en": "Spain / Paris art world", "hi": "स्पेन / पेरिस कला-जगत", "mr": "स्पेन / पॅरिसचे कलाविश्व"},
+    "image": "/img/persistence-memory.svg",
+    "alt": "Original illustrative cover showing dreamlike soft clocks in a surreal landscape; not a reproduction of Dalí's painting.",
+    "story": {
+      "en": "Dalí's small 1931 canvas places limp watches in a dreamlike landscape. The familiar object of a clock becomes strange when it bends and droops. The work is associated with Surrealism, which explored dreams, the unconscious, and surprising combinations. Interpretations of the watches vary; the painting does not provide one definitive explanation.",
+      "hi": "दाली के 1931 के छोटे कैनवास में सपने जैसे परिदृश्य में झुड़ी हुई घड़ियाँ हैं। परिचित घड़ी मुड़कर और लटककर अजनबी बन जाती है। यह अतियथार्थवाद से जुड़ा है, जिसने सपनों, अचेतन और अप्रत्याशित संयोजनों की खोज की। घड़ियों के अर्थ अलग-अलग समझे जाते हैं; चित्र एक निश्चित उत्तर नहीं देता।",
+      "mr": "दाली यांच्या 1931 मधील लहान कॅनव्हासवर स्वप्नवत परिसरात वाकलेल्या घड्याळांचे चित्रण आहे. परिचित घड्याळ मऊ होऊन वाकते तेव्हा ते अनोळखी वाटते. ही कलाकृती अतिवास्तववादाशी संबंधित आहे; या चळवळीने स्वप्ने, अचेतन मन आणि अनपेक्षित संयोगांचा शोध घेतला. घड्याळांच्या अर्थाबद्दल अनेक मते आहेत."
+    },
+    "speaks": {
+      "en": "I am a clock that has forgotten how to be rigid. In this landscape, time does not stand like a ruler; it droops, stretches, and slips away. Do not ask me for one answer—ask what time feels like in a dream.",
+      "hi": "मैं ऐसी घड़ी हूँ जो कठोर रहना भूल गई है। इस परिदृश्य में समय किसी सीधी छड़ी की तरह नहीं खड़ा; वह झुकता, फैलता और फिसल जाता है। मुझसे एक उत्तर न माँगिए—पूछिए कि सपने में समय कैसा लगता है।",
+      "mr": "मी अशी घड्याळ आहे जिने कठोर राहणे विसरले आहे. या दृश्यात वेळ सरळ काठीसारखा उभा राहत नाही; तो वाकतो, पसरतो आणि निसटतो. एकच उत्तर विचारू नका—स्वप्नात वेळ कसा जाणवतो ते विचारा."
+    },
+    "hiddenDetails": [
+      {"id":"soft-clock","label":{"en":"The soft watch","hi":"नरम घड़ी","mr":"मऊ घड्याळ"},"position":{"x":46,"y":48},"text":{"en":"The watch droops over an edge, turning a precise measuring instrument into something flexible and vulnerable.","hi":"घड़ी किनारे पर लटकती है, जिससे सटीक मापने वाला उपकरण लचीला और असुरक्षित दिखता है।","mr":"घड्याळ कडेवर वाकून लटकते; त्यामुळे अचूक मोजमाप करणारे साधन लवचिक आणि नाजूक वाटते."}},
+      {"id":"empty-landscape","label":{"en":"The quiet shore","hi":"शांत किनारा","mr":"शांत किनारा"},"position":{"x":76,"y":77},"text":{"en":"The bare landscape feels still and almost empty. Its stillness makes the melting clocks even more unsettling.","hi":"खाली परिदृश्य शांत और लगभग खाली लगता है। यही स्थिरता पिघलती घड़ियों को और बेचैन करती है।","mr":"ओसाड परिसर शांत आणि जवळजवळ रिकामा वाटतो. ही शांतता वितळणाऱ्या घड्याळांना अधिक अस्वस्थ करणारी बनवते."}},
+      {"id":"ant-like","label":{"en":"The tiny figure","hi":"छोटी आकृति","mr":"लहान आकृती"},"position":{"x":25,"y":77},"text":{"en":"The small, ambiguous form adds another layer of dream logic. Its exact reading should be treated as interpretation, not settled fact.","hi":"छोटी, अस्पष्ट आकृति सपने जैसी तर्क-व्यवस्था को और बढ़ाती है। इसका अर्थ व्याख्या है, स्थापित तथ्य नहीं।","mr":"लहान, अस्पष्ट आकार स्वप्नवत तर्काला आणखी एक थर देतो. त्याचा अर्थ हा अर्थलावणीचा भाग आहे, निश्चित तथ्य नाही."}}
+    ],
+    "timeline": [
+      {"year":"1931","event":{"en":"Dalí paints The Persistence of Memory.","hi":"दाली यह चित्र बनाते हैं।","mr":"दाली हे चित्र रंगवतात."},"world":{"en":"The Empire State Building opens in New York as modern life accelerates.","hi":"न्यूयॉर्क में एम्पायर स्टेट बिल्डिंग खुलती है; आधुनिक जीवन तेज़ हो रहा है।","mr":"न्यूयॉर्कमध्ये एम्पायर स्टेट बिल्डिंग सुरू होते; आधुनिक जीवन वेग घेत आहे."}},
+      {"year":"1930s","event":{"en":"Surrealist artists explore dreams and the unconscious.","hi":"अतियथार्थवादी कलाकार सपनों और अचेतन की खोज करते हैं।","mr":"अतिवास्तववादी कलाकार स्वप्ने आणि अचेतन मनाचा शोध घेतात."},"world":{"en":"Psychology and new approaches to the mind enter wider cultural debate.","hi":"मनोविज्ञान और मन के नए विचार व्यापक सांस्कृतिक चर्चा में आते हैं।","mr":"मानसशास्त्र आणि मनाविषयीच्या नव्या कल्पना व्यापक चर्चेत येतात."}}
+    ],
+    "qa": [
+      {"q":"Why are the clocks melting?","a":{"en":"There is no single confirmed answer. Their softness makes time appear unstable and dreamlike, which fits the Surrealist interest in unexpected transformations.","hi":"इसका एक ही प्रमाणित उत्तर नहीं है। घड़ियों का नरम होना समय को अस्थिर और सपने जैसा बनाता है, जो अतियथार्थवाद की अप्रत्याशित रूपांतरणों में रुचि से मेल खाता है।","mr":"याचे एकच निश्चित उत्तर नाही. घड्याळांचे मऊ होणे वेळ अस्थिर आणि स्वप्नवत असल्यासारखे दाखवते; हे अतिवास्तववादातील अनपेक्षित रूपांतरांशी जुळते."}},
+      {"q":"What is surrealism?","a":{"en":"Surrealism is an art and literary movement that explored dreams, the unconscious, and combinations that defy ordinary logic.","hi":"अतियथार्थवाद कला और साहित्य की ऐसी धारा है जिसने सपनों, अचेतन मन और सामान्य तर्क से परे संयोजनों की खोज की।","mr":"अतिवास्तववाद ही कला आणि साहित्याची चळवळ आहे. तिने स्वप्ने, अचेतन मन आणि सामान्य तर्काला आव्हान देणारे संयोग शोधले."}},
+      {"q":"What does the painting mean?","a":{"en":"Interpretations vary. A useful starting point is to notice how familiar objects become strange and how the empty landscape changes the mood. The artist did not leave one definitive decoding key.","hi":"व्याख्याएँ अलग-अलग हैं। शुरुआत इस बात से करें कि परिचित वस्तुएँ अजीब कैसे हो जाती हैं और खाली परिदृश्य वातावरण कैसे बदलता है। कलाकार ने कोई एक निश्चित कुंजी नहीं छोड़ी।","mr":"अर्थलावण्या वेगवेगळ्या आहेत. परिचित वस्तू अनोळखी कशा होतात आणि रिकामा परिसर भाव कसा बदलतो हे पाहा. कलाकाराने एकच निश्चित अर्थ दिलेला नाही."}}
+    ],
+    "source": "https://www.moma.org/collection/works/79018"
+  },
+  {
+    "id": "shakuntala",
+    "title": {"en": "Shakuntala Looking for Dushyanta", "hi": "दुष्यंत को देखती शकुंतला", "mr": "दुष्यंताकडे पाहणारी शकुंतला"},
+    "artist": "Raja Ravi Varma",
+    "year": "1898",
+    "period": {"en": "Academic realism in Indian painting", "hi": "भारतीय चित्रकला में अकादमिक यथार्थवाद", "mr": "भारतीय चित्रकलेतील अकादमिक वास्तववाद"},
+    "medium": {"en": "Oil painting", "hi": "तेल चित्रकला", "mr": "तेलचित्र"},
+    "place": {"en": "India", "hi": "भारत", "mr": "भारत"},
+    "image": "/img/shakuntala.svg",
+    "alt": "Original illustrative cover inspired by a figure in an Indian forest; not a reproduction of Raja Ravi Varma's painting.",
+    "story": {
+      "en": "Raja Ravi Varma brought techniques associated with European academic painting into scenes drawn from Indian epics and literary traditions. In this episode, Shakuntala turns away as if checking for a thorn, while her glance suggests she is looking for Dushyanta. The gesture combines narrative, emotion, and a carefully staged natural setting.",
+      "hi": "राजा रवि वर्मा ने यूरोपीय अकादमिक चित्रकला की तकनीकों को भारतीय महाकाव्यों और साहित्य से लिए गए दृश्यों के साथ जोड़ा। इस प्रसंग में शकुंतला काँटा निकालने का बहाना करती हुई मुड़ती है, जबकि उसकी नज़र दुष्यंत को खोजती प्रतीत होती है। यह मुद्रा कथा, भावना और सजे हुए प्राकृतिक परिवेश को जोड़ती है।",
+      "mr": "राजा रवि वर्मा यांनी युरोपीय अकादमिक चित्रकलेची तंत्रे भारतीय महाकाव्ये आणि साहित्यपरंपरेतील प्रसंगांशी जोडली. या दृश्यात शकुंतला काटा काढत असल्याचा बहाणा करून वळते, पण तिची नजर दुष्यंताला शोधत असल्यासारखी दिसते. ही मुद्रा कथा, भावना आणि नैसर्गिक परिसर एकत्र आणते."
+    },
+    "speaks": {
+      "en": "I pause in the forest and pretend to look at my foot, but my thoughts are elsewhere. A glance can tell a story that words do not. In my quiet gesture, longing becomes visible.",
+      "hi": "मैं वन में रुककर अपने पैर को देखने का बहाना करती हूँ, लेकिन मेरे विचार कहीं और हैं। एक नज़र वह कहानी कह सकती है जो शब्द नहीं कह पाते। मेरी शांत मुद्रा में प्रतीक्षा दिखाई देती है।",
+      "mr": "मी वनात थांबून पायाकडे पाहत असल्याचा बहाणा करते, पण माझे विचार दुसरीकडे आहेत. एक नजर शब्द न सांगू शकणारी कथा सांगू शकते. माझ्या शांत मुद्रेत ओढ दिसून येते."
+    },
+    "hiddenDetails": [
+      {"id":"glance","label":{"en":"The backward glance","hi":"पीछे मुड़कर देखना","mr":"मागे वळून पाहणारी नजर"},"position":{"x":58,"y":31},"text":{"en":"The backward glance gives the scene its narrative tension. The viewer is invited to infer a feeling from a small gesture.","hi":"पीछे मुड़ी नज़र दृश्य में कथा का तनाव पैदा करती है। दर्शक छोटे-से हावभाव से भावना समझने के लिए प्रेरित होता है।","mr":"मागे वळून पाहणारी नजर दृश्यात कथानकातील ताण आणते. छोट्या हालचालीतून भावना समजून घेण्याचे आमंत्रण पाहणाऱ्याला मिळते."}},
+      {"id":"forest","label":{"en":"The forest setting","hi":"वन का परिवेश","mr":"वनराईचा परिसर"},"position":{"x":22,"y":64},"text":{"en":"The trees frame the figure and create a sheltered, private atmosphere for the moment in the story.","hi":"पेड़ आकृति को घेरते हैं और कहानी के इस क्षण को निजी, संरक्षित वातावरण देते हैं।","mr":"झाडे आकृतीला चौकट देतात आणि कथेतल्या क्षणाला खाजगी, निवांत वातावरण देतात."}},
+      {"id":"gesture","label":{"en":"The foot gesture","hi":"पैर की ओर इशारा","mr":"पायाकडे केलेली हालचाल"},"position":{"x":52,"y":78},"text":{"en":"The apparent search for a thorn is a storytelling device: the body offers a plausible reason to turn while the eyes reveal another intention.","hi":"काँटा खोजने का बहाना कथात्मक युक्ति है: शरीर मुड़ने का कारण देता है, जबकि आँखें दूसरा भाव प्रकट करती हैं।","mr":"काटा शोधण्याचा बहाणा ही कथनाची युक्ती आहे: शरीर वळण्याचे कारण देते, तर डोळे वेगळी भावना दाखवतात."}}
+    ],
+    "timeline": [
+      {"year":"1898","event":{"en":"Raja Ravi Varma's mythological scenes circulate through painting and print culture.","hi":"राजा रवि वर्मा के पौराणिक दृश्य चित्रों और प्रिंट संस्कृति के माध्यम से फैलते हैं।","mr":"राजा रवि वर्मा यांची पौराणिक दृश्ये चित्रकला आणि छपाईमधून लोकप्रिय होतात."},"world":{"en":"The first modern Olympic Games have recently revived an international sporting tradition.","hi":"हाल ही में पहले आधुनिक ओलंपिक खेलों ने अंतरराष्ट्रीय खेल परंपरा को फिर शुरू किया है।","mr":"अलीकडेच पहिल्या आधुनिक ऑलिंपिक स्पर्धांनी आंतरराष्ट्रीय क्रीडा परंपरेला नवे रूप दिले आहे."}},
+      {"year":"Early 1900s","event":{"en":"Reproductions help Ravi Varma's mythological imagery reach wider audiences.","hi":"प्रतिकृतियों से रवि वर्मा की पौराणिक छवियाँ अधिक लोगों तक पहुँचती हैं।","mr":"प्रतिमुद्रणामुळे रवि वर्मा यांची पौराणिक चित्रे अधिक लोकांपर्यंत पोहोचतात."},"world":{"en":"Print and photography are changing how art travels beyond elite collections.","hi":"प्रिंट और फ़ोटोग्राफ़ी कला को सीमित संग्रहों से बाहर पहुँचाने का तरीका बदल रहे हैं।","mr":"छपाई आणि छायाचित्रणामुळे कला अभिजन संग्रहांपलीकडे पोहोचण्याची पद्धत बदलते."}}
+    ],
+    "qa": [
+      {"q":"Who is Shakuntala?","a":{"en":"Shakuntala is a figure from Sanskrit literary tradition, known from the Mahabharata and Kalidasa's play Abhijnanashakuntalam. The painting draws on the story of her relationship with King Dushyanta.","hi":"शकुंतला संस्कृत साहित्य की पात्र हैं, जो महाभारत और कालिदास के नाटक अभिज्ञानशाकुंतलम् से जानी जाती हैं। चित्र राजा दुष्यंत के साथ उनकी कथा से जुड़ा है।","mr":"शकुंतला या संस्कृत साहित्यपरंपरेतील व्यक्तिरेखा आहेत. त्या महाभारत आणि कालिदासाच्या अभिज्ञानशाकुंतलम् नाटकातून परिचित आहेत. हे चित्र राजा दुष्यंताशी संबंधित कथेतून प्रेरित आहे."}},
+      {"q":"Why is she looking back?","a":{"en":"In the story, Shakuntala is distracted by thoughts of Dushyanta. The foot-and-thorn gesture gives her a natural reason to turn while hinting at her feelings.","hi":"कथा में शकुंतला दुष्यंत के विचारों में खोई है। पैर और काँटे का हावभाव मुड़ने का स्वाभाविक कारण देता है और उसके भावों का संकेत करता है।","mr":"कथेत शकुंतला दुष्यंताच्या विचारांत गुंतलेली आहे. पायातील काट्याचा बहाणा वळण्यासाठी नैसर्गिक कारण देतो आणि तिच्या भावना सूचित करतो."}},
+      {"q":"What makes Ravi Varma distinctive?","a":{"en":"Ravi Varma combined oil-painting techniques and naturalistic modelling with subjects from Indian epics and mythology. His printed images helped these subjects reach a broader public.","hi":"रवि वर्मा ने तेल चित्रकला और यथार्थवादी आकृतियों को भारतीय महाकाव्यों व पौराणिक विषयों से जोड़ा। उनके प्रिंटेड चित्र इन विषयों को व्यापक दर्शकों तक ले गए।","mr":"रवि वर्मा यांनी तेलचित्रण आणि वास्तववादी आकृतीबंध भारतीय महाकाव्ये व पुराणकथांशी जोडले. त्यांच्या छापील चित्रांमुळे हे विषय व्यापक लोकांपर्यंत पोहोचले."}}
+    ],
+    "source": "https://en.wikipedia.org/wiki/Shakuntala_(Raja_Ravi_Varma)"
+  }
+]

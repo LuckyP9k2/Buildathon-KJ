@@ -1,0 +1,1 @@
+Run `npm run copy:runtime` after `npm install` to copy compatible local ONNX / WASM runtime assets here when the installed package provides separate files. If the selected runtime version uses another asset layout, follow its official local-runtime instructions and update src/recognizer.js accordingly.

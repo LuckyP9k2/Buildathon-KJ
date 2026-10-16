@@ -1,0 +1,14 @@
+{
+  "name": "ArtLens — Beyond the Frame",
+  "short_name": "ArtLens",
+  "description": "An offline-first companion for discovering the stories behind art.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f1e9",
+  "theme_color": "#171a20",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/img/artlens-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
