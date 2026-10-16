@@ -10,6 +10,7 @@
     "copy:runtime": "node scripts/copy-runtime-assets.mjs"
   },
   "dependencies": {
+    "@google/genai": "^2.30.0",
     "@huggingface/transformers": "4.3.1"
   },
   "devDependencies": {
