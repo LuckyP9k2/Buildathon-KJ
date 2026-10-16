@@ -1,18 +1,853 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#171a20" />
-    <meta name="description" content="ArtLens is an offline-first, on-device museum art companion. See the art. Hear it speak." />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="icon" type="image/svg+xml" href="/img/artlens-mark.svg" />
-    <title>ArtLens — Beyond the Frame</title>
-  </head>
-  <body>
-    <div id="app">
-      <div class="boot-screen"><span class="boot-mark">A</span><p>Opening the gallery…</p></div>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Artwork Story (test)</title>
+  <meta name="theme-color" content="#F7F5F1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #121214;
+      --surface: #1C1B1F;
+      --line: #2A2926;
+      --text: #F2EEE6;
+      --muted: #A39E94;
+      --accent: #5FB3A1;
+      --ink: #0E1412;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+    }
+
+    a,
+    button {
+      font-family: inherit;
+    }
+
+    .app {
+      max-width: 480px;
+      margin: 0 auto;
+      height: 100dvh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screen {
+      display: none;
+      flex-direction: column;
+      height: calc(100dvh - 84px);
+      overflow-y: auto;
+      padding: 48px 24px 16px;
+      gap: 18px;
+    }
+
+    .screen.active {
+      display: flex;
+    }
+
+    h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: -0.4px;
+      line-height: 1.12;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .brand {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .btn {
+      height: 56px;
+      border-radius: 28px;
+      border: 0;
+      background: var(--accent);
+      color: var(--ink);
+      font-size: 17px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn.ghost {
+      height: 48px;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #3A3835;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .btn.small {
+      height: 52px;
+      font-size: 16px;
+    }
+
+    .finder {
+      position: relative;
+      flex: 1;
+      min-height: 260px;
+      border-radius: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .corner {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border: 0 solid var(--accent);
+    }
+
+    .tl {
+      top: 20px;
+      left: 20px;
+      border-top-width: 3px;
+      border-left-width: 3px;
+      border-top-left-radius: 10px;
+    }
+
+    .tr {
+      top: 20px;
+      right: 20px;
+      border-top-width: 3px;
+      border-right-width: 3px;
+      border-top-right-radius: 10px;
+    }
+
+    .bl {
+      bottom: 20px;
+      left: 20px;
+      border-bottom-width: 3px;
+      border-left-width: 3px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .br {
+      bottom: 20px;
+      right: 20px;
+      border-bottom-width: 3px;
+      border-right-width: 3px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .scanline {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 10%;
+      height: 3px;
+      background: var(--accent);
+      box-shadow: 0 0 24px 6px rgba(95, 179, 161, .45);
+      animation: scan 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes scan {
+      to {
+        top: 88%;
+      }
+    }
+
+    .steps {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .steps li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .steps li.done,
+    .steps li.now {
+      color: var(--text);
+    }
+
+    .dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      border: 2px solid #3A3835;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .done .dot {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .now .dot {
+      border-color: var(--accent);
+    }
+
+    .hero {
+      height: 260px;
+      flex-shrink: 0;
+      margin: -48px -24px 0;
+      background: linear-gradient(170deg, #34302B, #1E1C1A 70%, #121214);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .chip {
+      align-self: flex-start;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .4px;
+      color: var(--accent);
+      border: 1px solid #2F5A52;
+      border-radius: 12px;
+      padding: 4px 10px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .tab {
+      height: 44px;
+      padding: 0 12px;
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tab.on {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    .story p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #E0DACE;
+      margin-bottom: 14px;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    dt {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 15px;
+      text-align: right;
+    }
+
+    .note {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #8E897F;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .actions .btn {
+      flex: 1;
+    }
+
+    .chat {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bubble {
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: 88%;
+    }
+
+    .me {
+      align-self: flex-end;
+      background: var(--accent);
+      color: var(--ink);
+    }
+
+    .bot {
+      align-self: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+
+    .askrow {
+      display: flex;
+      gap: 8px;
+    }
+
+    .askrow input {
+      flex: 1;
+      min-width: 0;
+      height: 48px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      padding: 0 16px;
+      font-size: 15px;
+      font-family: inherit;
+      outline: 0;
+    }
+
+    .askrow button {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+      border: 0;
+      background: var(--accent);
+      color: var(--ink);
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .thumb {
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: linear-gradient(160deg, #34302B, #1E1C1A);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card b {
+      font-size: 15px;
+    }
+
+    .card span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    nav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 84px;
+      display: flex;
+      border-top: 1px solid var(--line);
+      background: var(--bg);
+    }
+
+    nav button {
+      flex: 1;
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      cursor: pointer;
+      min-height: 44px;
+    }
+
+    nav button.on {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    nav svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .back {
+      position: absolute;
+      top: 20px;
+      left: 16px;
+      width: 44px;
+      height: 44px;
+      border-radius: 22px;
+      border: 0;
+      background: rgba(18, 18, 20, .7);
+      color: var(--text);
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .err {
+      color: #E8A598;
+      font-size: 14px;
+    }
+
+    /* ===== Marble & bright theme (overrides the colours above) ===== */
+    :root {
+      --bg: #F7F5F1;
+      --surface: #FFFFFF;
+      --line: #E1DBD0;
+      --text: #2B2A28;
+      --muted: #6B655C;
+      --accent: #1F7A6B;
+      --ink: #FFFFFF;
+      --gold: #A9822E;
+    }
+
+    body {
+      background: #F7F5F1;
+    }
+
+    .app {
+      background-color: #F7F5F1;
+      background-image:
+        radial-gradient(900px 520px at 8% 0%, rgba(255, 255, 255, .95), transparent 60%),
+        radial-gradient(700px 600px at 100% 100%, rgba(226, 220, 210, .6), transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900'%3E%3Cfilter id='m' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.006 0.010' numOctaves='5' seed='11'/%3E%3CfeColorMatrix values='0 0 0 0 0.52 0 0 0 0 0.54 0 0 0 0 0.56 -14 0 0 0 1.05'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)' opacity='0.45'/%3E%3C/svg%3E");
+      background-size: auto, auto, cover;
+      background-position: center;
+    }
+
+    h1,
+    .brand {
+      color: var(--text);
+    }
+
+    .corner {
+      border-color: var(--gold);
+    }
+
+    .finder {
+      background: linear-gradient(145deg, #FFFFFF, #EEE9E1);
+      border-color: var(--line);
+      box-shadow: 0 8px 28px rgba(60, 50, 35, .08), inset 0 1px 0 #fff;
+    }
+
+    .hero {
+      background: linear-gradient(170deg, #ECE7DE, #F7F5F1 85%);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .back {
+      background: rgba(255, 255, 255, .88);
+      color: var(--text);
+      box-shadow: 0 2px 10px rgba(60, 50, 35, .18);
+    }
+
+    .btn {
+      box-shadow: 0 6px 16px rgba(31, 122, 107, .28);
+    }
+
+    .btn.ghost {
+      background: rgba(255, 255, 255, .7);
+      border-color: #CFC8BA;
+      color: var(--text);
+      box-shadow: none;
+    }
+
+    .scanline {
+      box-shadow: 0 0 22px 6px rgba(31, 122, 107, .35);
+    }
+
+    .dot {
+      border-color: #CFC8BA;
+    }
+
+    .done .dot {
+      border-color: var(--accent);
+    }
+
+    .now .dot {
+      border-color: var(--accent);
+    }
+
+    .chip {
+      border-color: #9CCBC0;
+      background: rgba(255, 255, 255, .75);
+    }
+
+    .story p {
+      color: #3A3835;
+    }
+
+    .note {
+      color: var(--muted);
+    }
+
+    .bubble.bot {
+      background: #FFFFFF;
+    }
+
+    .askrow input {
+      background: #FFFFFF;
+    }
+
+    .thumb {
+      background: linear-gradient(160deg, #FFFFFF, #EAE5DC);
+      box-shadow: 0 4px 14px rgba(60, 50, 35, .08);
+    }
+
+    nav {
+      background: rgba(255, 255, 255, .82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .err {
+      color: #B3402F;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- 1. SCAN -->
+    <section class="screen active" id="scan">
+      <div class="brand">Artwork Story</div>
+      <div>
+        <h1 style="font-size:34px">Point at anything old.<br>Hear its story.</h1>
+        <p class="muted" style="margin-top:8px;line-height:1.5">Paintings, sculptures, temples and relics. Snap a photo
+          and learn who made it, when, and why it matters.</p>
+      </div>
+      <div class="finder">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+          class="corner br"></span>
+        <p class="muted" style="max-width:220px;text-align:center;line-height:1.45">Frame the whole piece inside the
+          corners</p>
+      </div>
+      <input type="file" id="cam" accept="image/*" capture="environment" hidden>
+      <input type="file" id="gal" accept="image/*" hidden>
+      <button class="btn" id="btnScan">Scan artwork</button>
+      <button class="btn ghost" id="btnUpload">Upload from gallery</button>
+    </section>
+
+    <!-- 2. ANALYZING -->
+    <section class="screen" id="analyzing">
+      <div class="finder" id="preview" style="flex:none;height:300px">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span
+          class="corner br"></span>
+        <div class="scanline"></div>
+      </div>
+      <div>
+        <h1 style="font-size:28px">Finding its story</h1>
+        <p class="muted" style="margin-top:6px">This usually takes a few seconds.</p>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="now"><span class="dot"></span>Recognising the work</li>
+        <li><span class="dot"></span>Checking museum records</li>
+        <li><span class="dot"></span>Writing it in simple words</li>
+      </ol>
+      <p class="err" id="err" hidden></p>
+    </section>
+
+    <!-- 3. RESULT -->
+    <section class="screen" id="result">
+      <div class="hero" id="hero"><button class="back" id="btnBack" aria-label="Back">&#8592;</button></div>
+      <div>
+        <span class="chip" id="rMatch">Likely match</span>
+        <h1 style="font-size:30px;margin-top:8px" id="rName"></h1>
+        <p class="muted" style="margin-top:6px;font-size:14px" id="rSub"></p>
+      </div>
+      <div class="tabs">
+        <button class="tab on" data-tab="story">Story</button>
+        <button class="tab" data-tab="details">Details</button>
+        <button class="tab" data-tab="ask">Ask</button>
+      </div>
+      <div id="tab-story" class="story"></div>
+      <dl id="tab-details" hidden></dl>
+      <div id="tab-ask" hidden>
+        <div class="chat" id="chat">
+          <div class="bubble bot">Ask me anything about this artwork.</div>
+        </div>
+        <form class="askrow" id="askForm" style="margin-top:12px">
+          <input id="askInput" placeholder="Explain it to a 10-year-old" aria-label="Your question">
+          <button aria-label="Send">&#10148;</button>
+        </form>
+      </div>
+      <p class="note" id="rNote"></p>
+      <div class="actions">
+        <button class="btn small" id="btnListen">Listen</button>
+        <button class="btn small ghost" id="btnSave" style="height:52px">Save</button>
+      </div>
+    </section>
+
+    <!-- 4. COLLECTION -->
+    <section class="screen" id="collection">
+      <div>
+        <h1 style="font-size:32px">Your collection</h1>
+        <p class="muted" style="margin-top:6px;font-size:14px">Everything you have saved on this phone.</p>
+      </div>
+      <p class="muted" id="empty">Nothing saved yet. Scan an artwork and tap Save.</p>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <nav>
+      <button id="navScan" class="on">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+          <circle cx="12" cy="13.5" r="3.5" />
+        </svg>Scan
+      </button>
+      <button id="navCol">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="3" y="3" width="7.5" height="7.5" rx="1.5" />
+          <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5" />
+          <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5" />
+          <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5" />
+        </svg>Collection
+      </button>
+    </nav>
+  </div>
+
+  <script>
+    // ---- Settings -------------------------------------------------------
+    // Leave empty to use the built-in DEMO result.
+    // Later, set this to your server, e.g. "https://your-server.com/analyze".
+    // The server should accept a POST with form field "image" and return JSON:
+    // { name, sub, match, story: [paragraphs], details: [[label, value], ...], note }
+    const API_URL = "";
+
+    const DEMO = {
+      name: "Bust of Nefertiti",
+      sub: "Ancient Egypt · about 1345 BCE · Sculpture",
+      match: "Likely match",
+      story: [
+        "This painted head shows Queen Nefertiti, the wife of the pharaoh Akhenaten. It was made around 1345 BCE, most likely in the workshop of the sculptor Thutmose.",
+        "A German team led by Ludwig Borchardt found it in 1912 at Amarna, the city Akhenaten built. Today you can see it in the Neues Museum in Berlin.",
+        "It is famous as a picture of ancient beauty. Look at the long neck, the tall blue crown and the calm face."
+      ],
+      details: [["Period", "New Kingdom, 18th Dynasty"], ["Made", "About 1345 BCE"], ["Material", "Limestone, stucco, paint"], ["Found", "Amarna, Egypt, 1912"], ["Now at", "Neues Museum, Berlin"]],
+      note: "DEMO result: it is the same for every photo until you connect a server. Stories written by AI can be wrong, so check museum records for anything important."
+    };
+
+    // ---- Helpers --------------------------------------------------------
+    const $ = (id) => document.getElementById(id);
+    let current = null, currentPhoto = "";
+
+    function show(name) {
+      document.querySelectorAll(".screen").forEach(s => s.classList.toggle("active", s.id === name));
+      $("navScan").classList.toggle("on", name !== "collection");
+      $("navCol").classList.toggle("on", name === "collection");
+      if (name !== "result") speechSynthesis.cancel(), ($("btnListen").textContent = "Listen");
+    }
+
+    function readImage(file) {
+      return new Promise((resolve) => {
+        const r = new FileReader();
+        r.onload = () => resolve(r.result);
+        r.readAsDataURL(file);
+      });
+    }
+
+    function thumbnail(dataUrl, max = 320) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => {
+          const k = Math.min(1, max / Math.max(img.width, img.height));
+          const c = document.createElement("canvas");
+          c.width = img.width * k; c.height = img.height * k;
+          c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+          resolve(c.toDataURL("image/jpeg", 0.7));
+        };
+        img.src = dataUrl;
+      });
+    }
+
+    function setStep(n) {
+      [...$("steps").children].forEach((li, i) => {
+        li.className = i < n ? "done" : i === n ? "now" : "";
+        li.querySelector(".dot").textContent = i < n ? "✓" : "";
+      });
+    }
+
+    // ---- Scan flow ------------------------------------------------------
+    async function handleFile(file) {
+      if (!file) return;
+      currentPhoto = await readImage(file);
+      $("preview").style.backgroundImage = `url(${currentPhoto})`;
+      $("err").hidden = true;
+      setStep(0); show("analyzing");
+
+      try {
+        let data;
+        if (API_URL) {
+          const form = new FormData();
+          form.append("image", file);
+          const res = await fetch(API_URL, { method: "POST", body: form });
+          if (!res.ok) throw new Error("Server error " + res.status);
+          data = await res.json();
+          setStep(3);
+        } else {
+          await new Promise(r => setTimeout(r, 900)); setStep(1);
+          await new Promise(r => setTimeout(r, 900)); setStep(2);
+          await new Promise(r => setTimeout(r, 900)); setStep(3);
+          data = DEMO;
+        }
+        fillResult(data);
+        show("result");
+      } catch (e) {
+        $("err").textContent = "Something went wrong: " + e.message + ". Go back and try again.";
+        $("err").hidden = false;
+        setTimeout(() => show("scan"), 3500);
+      }
+    }
+
+    function fillResult(d) {
+      current = d;
+      $("hero").style.backgroundImage = `url(${currentPhoto})`;
+      $("rName").textContent = d.name;
+      $("rSub").textContent = d.sub;
+      $("rMatch").textContent = d.match || "Likely match";
+      $("tab-story").innerHTML = "";
+      d.story.forEach(t => { const p = document.createElement("p"); p.textContent = t; $("tab-story").appendChild(p); });
+      $("tab-details").innerHTML = "";
+      d.details.forEach(([k, v]) => {
+        const row = document.createElement("div"); row.className = "row";
+        const dt = document.createElement("dt"); dt.textContent = k;
+        const dd = document.createElement("dd"); dd.textContent = v;
+        row.append(dt, dd); $("tab-details").appendChild(row);
+      });
+      $("rNote").textContent = d.note || "Stories are written by AI. Check museum records for anything important.";
+      $("chat").innerHTML = '<div class="bubble bot">Ask me anything about this artwork.</div>';
+      selectTab("story");
+      $("btnSave").textContent = "Save";
+    }
+
+    function selectTab(name) {
+      document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.dataset.tab === name));
+      ["story", "details", "ask"].forEach(n => $("tab-" + n).hidden = n !== name);
+    }
+
+    // ---- Events ---------------------------------------------------------
+    $("btnScan").onclick = () => $("cam").click();
+    $("btnUpload").onclick = () => $("gal").click();
+    $("cam").onchange = (e) => { handleFile(e.target.files[0]); e.target.value = ""; };
+    $("gal").onchange = (e) => { handleFile(e.target.files[0]); e.target.value = ""; };
+    $("btnBack").onclick = () => show("scan");
+    $("navScan").onclick = () => show("scan");
+    $("navCol").onclick = () => { renderCollection(); show("collection"); };
+    document.querySelectorAll(".tab").forEach(t => t.onclick = () => selectTab(t.dataset.tab));
+
+    $("btnListen").onclick = () => {
+      if (speechSynthesis.speaking) { speechSynthesis.cancel(); $("btnListen").textContent = "Listen"; return; }
+      const u = new SpeechSynthesisUtterance(current.name + ". " + current.story.join(" "));
+      u.onend = () => $("btnListen").textContent = "Listen";
+      speechSynthesis.speak(u);
+      $("btnListen").textContent = "Stop";
+    };
+
+    $("askForm").onsubmit = (e) => {
+      e.preventDefault();
+      const q = $("askInput").value.trim(); if (!q) return;
+      const add = (cls, text) => { const b = document.createElement("div"); b.className = "bubble " + cls; b.textContent = text; $("chat").appendChild(b); };
+      add("me", q);
+      add("bot", "Demo reply: connect your server to get a real answer to “" + q + "”.");
+      $("askInput").value = "";
+    };
+
+    // ---- Collection (saved in this browser only) ------------------------
+    function getSaved() { try { return JSON.parse(localStorage.getItem("saved") || "[]"); } catch (e) { return []; } }
+    $("btnSave").onclick = async () => {
+      const list = getSaved();
+      list.unshift({ name: current.name, sub: current.sub, photo: await thumbnail(currentPhoto), data: current });
+      try { localStorage.setItem("saved", JSON.stringify(list.slice(0, 20))); $("btnSave").textContent = "Saved ✓"; }
+      catch (e) { $("btnSave").textContent = "Storage full"; }
+    };
+    function renderCollection() {
+      const list = getSaved();
+      $("empty").hidden = list.length > 0;
+      $("grid").innerHTML = "";
+      list.forEach(item => {
+        const c = document.createElement("div"); c.className = "card";
+        const t = document.createElement("div"); t.className = "thumb"; t.style.backgroundImage = `url(${item.photo})`;
+        const b = document.createElement("b"); b.textContent = item.name;
+        const s = document.createElement("span"); s.textContent = item.sub;
+        c.append(t, b, s);
+        c.onclick = () => { currentPhoto = item.photo; fillResult(item.data); show("result"); };
+        $("grid").appendChild(c);
+      });
+    }
+  </script>
+</body>
+
 </html>
